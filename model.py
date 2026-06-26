@@ -19,7 +19,7 @@ def load_base_model_and_tokenizer(model_name='unsloth/Qwen2.5-0.5B-Instruct-bnb-
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name = model_name,
         max_seq_length = max_seq_length, # max num of tokens the model can process in a single pass (both for input and generated output)
-        load_in_4bit = True,
+        # load_in_4bit = True,
     )
     return (model, tokenizer)
 
